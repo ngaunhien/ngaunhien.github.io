@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Ngẫu Nhiên Tên 10 A 6</title>
+  <title>Ngẫu Nhiên Tên 10 A 7</title>
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/foundation.css" />
@@ -27,7 +27,7 @@ body { background:#F1C40F url(img/bg-noise-orange.png); }
 	<div class="row">
 		<div class="large-12 columns" style="padding-top:50px;background:#111 url(img/header-bg.png) repeat-x center top;z-index:20;">
 		<ul class="button-group even-4">
-      <li><a href="index2.html" class="alert button" id="reset">Lại</a></li>
+      <li><a href="index3.html" class="alert button" id="reset">Lại</a></li>
 			<li><button class="button" id="save" onclick="save();">Lưu</button></li>
 			<li><button class="button" id="save" onclick="save();">C.nhật</button></li>
 			<li><button class="success button" id="go" onclick="go();">B.đầu</button></li>
@@ -61,41 +61,45 @@ body { background:#F1C40F url(img/bg-noise-orange.png); }
 <script>
 var text;
 var names = new Array(
-'LÊ NGỌC NHẬT ANH',
-'NGUYỄN THỊ VÂN ANH',
-'LÊ PHẠM HÀ CHÂU',
-'ĐÀM QUANG ĐỈNH',
-'VŨ XUÂN ĐÔ',
-'TRẦN NGỌC HIẾU',
-'ĐINH THỊ QUỲNH HOA',
-'PHẠM THỊ MAI HOA',
-'VŨ THỊ THANH HUYÊN',
-'PHẠM THỊ THANH HUYỀN',
-'VŨ THỊ THANH HUYỀN',
-'ĐỒNG VIỆT HÙNG',
-'PHẠM THỊ THU HƯỜNG',
-'NGÔ QUANG KHẢI',
-'NGUYỄN THỊ LIÊN',
-'VŨ THỊ LIÊN',
-'ĐINH DIỆU LINH',
-'NGUYỄN THỊ MAI',
-'PHẠM THỊ TUYẾT MAI',
-'NGUYỄN CHU HOÀI NGÂN',
-'ĐINH QUỐC NGỌC',
-'LÊ THỊ THẢO NGUYÊN',
-'HOÀNG THỊ NGUYỆT',
-'BÙI THỊ PHƯƠNG NHÃ',
-'TRẦN THỊ KIM OANH',
-'DƯ ĐỨC PHÚC',
-'NGUYỄN VĂN PHÚC',
-'DƯƠNG THỊ LỆ QUYÊN',
-'ĐINH THỊ HỒNG QUYÊN',
-'LÊ ĐỨC QUÝ',
-'NGUYỄN THANH TÂM',
-'ĐINH THỊ THANH',
-'VŨ BÁCH THIỆN',
-'BÙI THỊ MỸ THUẬN',
-'BÙI THỊ THANH THÚY'
+'ĐỖ NHẬT ANH',
+'NGÔ HÙNG ANH',
+'TRẦN ĐỨC CHIẾN',
+'TẠ MINH CƯỜNG',
+'NGUYỄN THỊ MỸ DUYÊN',
+'VŨ TIẾN DŨNG',
+'NGUYỄN TIẾN ĐẠT',
+'NGUYỄN VĂN ĐẠT',
+'NGUYỄN VĂN ĐẠT',
+'DƯƠNG THỊ GIANG',
+'NGUYỄN NGỌC HƯƠNG GIANG',
+'NGUYỄN VĂN HẬU',
+'ĐINH THỊ MỸ HOA',
+'VŨ ĐỨC HOÀNG',
+'VŨ TRỌNG HUY',
+'ĐOÀN THỊ HUYỀN',
+'NGUYỄN VĂN KIÊN',
+'CÁT TÙNG LÂM',
+'NGUYỄN THỊ KIM LOAN',
+'PHẠM THÀNH LONG',
+'PHẠM GIA LƯƠNG',
+'TRƯƠNG THỊ NGỌC MAI',
+'NGÔ THỊ MẬN',
+'VŨ THỊ THANH MỸ',
+'BÙI THỊ HỒNG NGỌC',
+'NGUYỄN THỊ NHUNG',
+'NGÔ THỊ THU PHƯƠNG',
+'TRẦN THỊ MAI PHƯƠNG',
+'BÙI THỊ PHƯƠNG THẢO',
+'ĐOÀN VĂN TIẾN',
+'DƯƠNG VĂN TOÀN',
+'ĐINH VĂN TOẢN',
+'BÙI MAI HUYỀN TRANG',
+'NGÔ THỊ THU TRANG',
+'PHẠM HOÀNG BẢO TRANG',
+'ĐỖ MINH TRƯỜNG',
+'VÕ HẠ VI',
+'NGUYỄN THỊ XUÂN YẾN',
+'PHAN ĐỖ HOÀNG YẾN'
 
                       );
 
@@ -111,41 +115,45 @@ function reset(){
     else   {
       var names = new Array(
 	  
-'LÊ NGỌC NHẬT ANH',
-'NGUYỄN THỊ VÂN ANH',
-'LÊ PHẠM HÀ CHÂU',
-'ĐÀM QUANG ĐỈNH',
-'VŨ XUÂN ĐÔ',
-'TRẦN NGỌC HIẾU',
-'ĐINH THỊ QUỲNH HOA',
-'PHẠM THỊ MAI HOA',
-'VŨ THỊ THANH HUYÊN',
-'PHẠM THỊ THANH HUYỀN',
-'VŨ THỊ THANH HUYỀN',
-'ĐỒNG VIỆT HÙNG',
-'PHẠM THỊ THU HƯỜNG',
-'NGÔ QUANG KHẢI',
-'NGUYỄN THỊ LIÊN',
-'VŨ THỊ LIÊN',
-'ĐINH DIỆU LINH',
-'NGUYỄN THỊ MAI',
-'PHẠM THỊ TUYẾT MAI',
-'NGUYỄN CHU HOÀI NGÂN',
-'ĐINH QUỐC NGỌC',
-'LÊ THỊ THẢO NGUYÊN',
-'HOÀNG THỊ NGUYỆT',
-'BÙI THỊ PHƯƠNG NHÃ',
-'TRẦN THỊ KIM OANH',
-'DƯ ĐỨC PHÚC',
-'NGUYỄN VĂN PHÚC',
-'DƯƠNG THỊ LỆ QUYÊN',
-'ĐINH THỊ HỒNG QUYÊN',
-'LÊ ĐỨC QUÝ',
-'NGUYỄN THANH TÂM',
-'ĐINH THỊ THANH',
-'VŨ BÁCH THIỆN',
-'BÙI THỊ MỸ THUẬN',
-'BÙI THỊ THANH THÚY'
+'ĐỖ NHẬT ANH',
+'NGÔ HÙNG ANH',
+'TRẦN ĐỨC CHIẾN',
+'TẠ MINH CƯỜNG',
+'NGUYỄN THỊ MỸ DUYÊN',
+'VŨ TIẾN DŨNG',
+'NGUYỄN TIẾN ĐẠT',
+'NGUYỄN VĂN ĐẠT',
+'NGUYỄN VĂN ĐẠT',
+'DƯƠNG THỊ GIANG',
+'NGUYỄN NGỌC HƯƠNG GIANG',
+'NGUYỄN VĂN HẬU',
+'ĐINH THỊ MỸ HOA',
+'VŨ ĐỨC HOÀNG',
+'VŨ TRỌNG HUY',
+'ĐOÀN THỊ HUYỀN',
+'NGUYỄN VĂN KIÊN',
+'CÁT TÙNG LÂM',
+'NGUYỄN THỊ KIM LOAN',
+'PHẠM THÀNH LONG',
+'PHẠM GIA LƯƠNG',
+'TRƯƠNG THỊ NGỌC MAI',
+'NGÔ THỊ MẬN',
+'VŨ THỊ THANH MỸ',
+'BÙI THỊ HỒNG NGỌC',
+'NGUYỄN THỊ NHUNG',
+'NGÔ THỊ THU PHƯƠNG',
+'TRẦN THỊ MAI PHƯƠNG',
+'BÙI THỊ PHƯƠNG THẢO',
+'ĐOÀN VĂN TIẾN',
+'DƯƠNG VĂN TOÀN',
+'ĐINH VĂN TOẢN',
+'BÙI MAI HUYỀN TRANG',
+'NGÔ THỊ THU TRANG',
+'PHẠM HOÀNG BẢO TRANG',
+'ĐỖ MINH TRƯỜNG',
+'VÕ HẠ VI',
+'NGUYỄN THỊ XUÂN YẾN',
+'PHAN ĐỖ HOÀNG YẾN'
                       );
     for(var i in names){
       name = names[i];
